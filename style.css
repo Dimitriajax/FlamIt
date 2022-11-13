@@ -127,15 +127,24 @@ main #right {
 }
 
 .cam-outline .cam-footer {
-    background-color: var(--red);
-    height: 5vh;
-    color: var(--white);
-    font-size: var(--textSize);
-    display: flex;
     align-items: center;
+    background-color: var(--red);
+    color: var(--white);
+    display: flex;
+    font-size: var(--textSize);
+    height: 5vh;
+    justify-content: space-between;
 }
 
-.cam-footer .role {
+.cam-footer .firefighter-info {
+    display: flex;
+}
+
+.firefighter-info .role {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.cam-footer .footer-stripes {
+    min-height: 5vh;
 }
