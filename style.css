@@ -33,34 +33,34 @@ header {
     padding-left: 30px;
 }
 
-#id {
-    background-color: beige;
-}
-
 header #car-id {
     color: var(--white);
     font-size: 20px;
     margin-top: 5px;
 }
 
+body {
+    overflow: hidden;
+}
+
 main {
-    background-color: blue;
+    background-color: var(--white);
     display: flex;
     flex-direction: row;
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
+
 }
 
 main #left {
     background-color: var(--white);
-    height: 90vh;
     max-width: 20vw;
     width: 20vw;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
 }
 
 main #right {
-    background-color: bisque;
-    height: 90vh;
+    height: 93vh;
     max-width: 80vw;
     width: 80vw;
 }
@@ -110,15 +110,16 @@ main #right {
 }
 
 #right #cam-container {
-    background-color: blue;
-    height: 85vh;
     margin-top: 15px;
-    width: 75vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+    justify-content: center;
 }
 
 #cam-container .cam-outline {
-    background-color: coral;
-    height: 30vh;
+    height: 25vh;
     width: 30vw;
 }
 
