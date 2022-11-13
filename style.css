@@ -6,7 +6,15 @@
     --lightGreen: #00BF80;
 }
 
+* {
+    border: 0;
+    margin: 0;
+}
 
 header {
     background-color: var(--red);
+    height: 3vw;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
 }
