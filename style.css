@@ -4,6 +4,7 @@
     --lightGrey: #AEAEAE;
     --darkGray: #9A9A9A;
     --lightGreen: #00BF80;
+    --textSize: 14px;
 }
 
 @font-face {
@@ -17,7 +18,7 @@
 }
 
 * {
-    border: 0;
+    padding: 0;
     font-family: 'Open Sans';
     margin: 0;
 }
@@ -50,16 +51,55 @@ main {
     width: 100vw;
 }
 
-#left {
+main #left {
     background-color: var(--white);
     height: 90vh;
     max-width: 20vw;
     width: 20vw;
 }
 
-#right {
+main #right {
     background-color: bisque;
     height: 90vh;
     max-width: 80vw;
     width: 80vw;
+}
+
+#side-nav {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    max-width: 20vw;
+}
+
+#cam-switches-container {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 20vw;
+}
+
+#cam-switches-container .cam-switch {
+    border: none;
+    width: 18vw;
+    padding: 10px;
+    border-radius: 15px;
+    color: var(--white);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--textSize);
+}
+
+#cam-switches-container #cam-switch-on {
+    background-color: var(--lightGreen);
+
+}
+
+#cam-switches-container #cam-switch-off {
+    background-color: var(--lightGrey);
+
 }
