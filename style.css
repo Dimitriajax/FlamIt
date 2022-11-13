@@ -1,0 +1,12 @@
+:root {
+    --red: #D0021B;
+    --white: #F5F5F5;
+    --lightGrey: #AEAEAE;
+    --darkGray: #9A9A9A;
+    --lightGreen: #00BF80;
+}
+
+
+header {
+    background-color: var(--red);
+}
