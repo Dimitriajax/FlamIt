@@ -124,7 +124,78 @@ main #right {
 
 .cam-outline .cam-feed {
     height: 25vh;
+    position: relative;
 }
+
+
+.cam-outline #cam-feed-one {
+    background-image: url("images/action.jpg");
+    background-size: cover;
+}
+
+.cam-feed .cam-overlay {
+    width: 30vw;
+    height: 25vh;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cam-overlay .top-overlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.top-overlay .recording-status {
+    background-color: var(--red);
+    width: fit-content;
+    color: var(--white);
+    font-size: var(--textSize);
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.top-overlay .actions {
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cam-overlay .bottom-overlay {
+    padding: 15px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-overlay .recording-time {
+    color: var(--white);
+    font-size: var(--textSize);
+}
+
+
+.actions .battery-status {
+    rotate: 270deg;
+}
+
+
+
+.actions .toggle,
+.fullscreen {
+    border: none;
+    background-color: transparent;
+    height: 24px
+}
+
 
 .cam-outline .cam-footer {
     align-items: center;
