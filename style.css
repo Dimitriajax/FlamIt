@@ -4,6 +4,7 @@
     --lightGrey: #AEAEAE;
     --darkGray: #9A9A9A;
     --lightGreen: #00BF80;
+    --black: #181818;
     --textSize: 14px;
 }
 
@@ -30,7 +31,7 @@ header {
     background-color: var(--red);
     display: flex;
     height: 50px;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 header #car-id {
@@ -121,23 +122,25 @@ main #right {
 #cam-container .cam-outline {
     height: 25vh;
     width: 30vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .cam-outline .cam-feed {
+    border: var(--black) 1px solid;
     height: 25vh;
-    position: relative;
 }
 
-
-.cam-outline #cam-feed-one {
-    background-image: url("images/action.jpg");
-    background-size: cover;
+.cam-feed .cam-display {
+    width: 30vw;
+    position: absolute;
+    height: 25vh;
 }
 
 .cam-feed .cam-overlay {
     width: 30vw;
     height: 25vh;
-    position: absolute;
+    position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -152,7 +155,6 @@ main #right {
 }
 
 .top-overlay .recording-status {
-    background-color: var(--red);
     width: fit-content;
     color: var(--white);
     font-size: var(--textSize);
@@ -161,6 +163,15 @@ main #right {
     padding-right: 10px;
     border-radius: 10px;
 }
+
+.top-overlay #live {
+    background-color: var(--red);
+}
+
+.top-overlay #offline {
+    background-color: var(--darkGray)
+}
+
 
 .top-overlay .actions {
     width: 65px;
