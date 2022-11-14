@@ -162,14 +162,7 @@ main #right {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
-}
-
-.top-overlay #live {
     background-color: var(--red);
-}
-
-.top-overlay #offline {
-    background-color: var(--darkGray)
 }
 
 
@@ -230,4 +223,59 @@ main #right {
 
 .cam-footer .footer-stripes {
     min-height: 5vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    main #left,
+    main #right {
+        min-width: 100vw;
+    }
+
+    #side-nav {
+        min-width: 90vw;
+        max-width: 90vw;
+        display: flex;
+    }
+
+    #side-nav #cam-switches-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100vw;
+        min-width: 95vw;
+    }
+
+    #cam-switches-container .cam-switch {
+        min-width: 40vw;
+    }
+
+
+    #right #cam-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #cam-container .cam-outline {
+        width: 80vw;
+
+    }
+
+    .cam-feed .cam-display {
+        width: 80vw;
+    }
+
+    .cam-feed .cam-overlay {
+        min-width: 80vw;
+    }
 }
